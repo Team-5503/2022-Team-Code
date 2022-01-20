@@ -2,7 +2,7 @@
   "tabPane": [
     {
       "title": "Drive",
-      "autoPopulate": false,
+      "autoPopulate": true,
       "autoPopulatePrefix": "",
       "widgetPane": {
         "gridSize": 128.0,
@@ -38,40 +38,7 @@
             "content": {
               "_type": "ComboBox Chooser",
               "_source0": "network_table:///SmartDashboard/autoChooser",
-              "_title": "Autonomous"
-            }
-          },
-          "6,0": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Text View",
-              "_source0": "network_table:///limelight/tx",
-              "_title": "limelight/tx"
-            }
-          },
-          "6,1": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Text View",
-              "_source0": "network_table:///limelight/ty",
-              "_title": "limelight/ty"
-            }
-          },
-          "6,2": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Text View",
-              "_source0": "network_table:///limelight/ta",
-              "_title": "limelight/ta"
+              "_title": "Select Autonomous..."
             }
           },
           "6,3": {
@@ -81,8 +48,8 @@
             ],
             "content": {
               "_type": "Text View",
-              "_source0": "network_table:///limelight/ts",
-              "_title": "limelight/ts"
+              "_source0": "network_table:///SmartDashboard/distance",
+              "_title": "Target Distance"
             }
           },
           "0,4": {
@@ -91,9 +58,37 @@
               1
             ],
             "content": {
-              "_type": "Text View",
-              "_source0": "network_table:///SmartDashboard/distance",
-              "_title": "Target Distance"
+              "_type": "Basic FMS Info",
+              "_title": "FMS"
+            }
+          },
+          "6,0": {
+            "size": [
+              1,
+              3
+            ],
+            "content": {
+              "_type": "List Layout",
+              "_title": "Offsets",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Text View",
+                  "_title": "limelight/tx"
+                },
+                {
+                  "_type": "Text View",
+                  "_title": "limelight/ty"
+                },
+                {
+                  "_type": "Text View",
+                  "_title": "limelight/ta"
+                },
+                {
+                  "_type": "Text View",
+                  "_title": "limelight/ts"
+                }
+              ]
             }
           }
         }
