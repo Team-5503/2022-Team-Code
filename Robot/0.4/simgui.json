@@ -28,11 +28,19 @@
       "/FMSInfo": "FMSInfo",
       "/LiveWindow/Drivetrain": "Subsystem",
       "/LiveWindow/Intake": "Subsystem",
+      "/LiveWindow/IntakeSystem": "Subsystem",
       "/LiveWindow/Limelight": "Subsystem",
       "/LiveWindow/Ungrouped/DifferentialDrive[1]": "DifferentialDrive",
       "/LiveWindow/Ungrouped/PIDController[1]": "PIDController",
       "/LiveWindow/Ungrouped/Scheduler": "Scheduler",
       "/SmartDashboard/autoChooser": "String Chooser"
+    },
+    "windows": {
+      "/LiveWindow/Drivetrain": {
+        "window": {
+          "visible": true
+        }
+      }
     }
   },
   "NetworkTables": {

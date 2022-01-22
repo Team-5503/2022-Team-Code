@@ -1,7 +1,3 @@
-// Copyright (c) FIRST and other WPILib contributors.
-// Open Source Software; you can modify and/or share it under the terms of
-// the WPILib BSD license file in the root directory of this project.
-
 package frc.robot;
 
 import edu.wpi.first.wpilibj.GenericHID;
@@ -11,12 +7,11 @@ import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 import frc.robot.commands.Vision;
 import frc.robot.commands.AutoDrive;
-import frc.robot.commands.RunIntake;
+import frc.robot.commands.TeleopIntake;
 import frc.robot.commands.TeleopDrive;
-import frc.robot.commands.OscarMike;
 import frc.robot.subsystems.Drivetrain;
 import frc.robot.subsystems.Limelight;
-import frc.robot.subsystems.IntakeSystem;
+import frc.robot.subsystems.Intake;
 
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a
@@ -28,12 +23,11 @@ public class RobotContainer {
   private final Drivetrain drivetrain;
   private final TeleopDrive teleopDrive;
   private final Limelight limelight;
-  private final IntakeSystem intakeSystem;
+  private final Intake intake;
 
   private final Vision vision;
-  private final OscarMike oscarMike;
   private final AutoDrive autoDrive;
-  private final RunIntake runIntake;
+  private final TeleopIntake teleopIntake;
   public static Joystick controller;
   // The robot's subsystems and commands are defined here...
 
@@ -43,12 +37,11 @@ public class RobotContainer {
     teleopDrive = new TeleopDrive(drivetrain);
     drivetrain.setDefaultCommand(teleopDrive);
     limelight = new Limelight();
-    intakeSystem = new IntakeSystem();
+    intake = new Intake();
 
     vision = new Vision(limelight);
-    oscarMike = new OscarMike(drivetrain);
     autoDrive = new AutoDrive(drivetrain);
-    runIntake = new RunIntake(intakeSystem);
+    teleopIntake = new TeleopIntake(intake);
     
     controller = new Joystick(Constants.USB.OPERATOR_0);
     // Configure the button bindings
@@ -64,10 +57,8 @@ public class RobotContainer {
   private void configureButtonBindings() {
     JoystickButton limelightTrackingButton = new JoystickButton(controller, 1);
     limelightTrackingButton.toggleWhenPressed(vision);
-    JoystickButton sprintButton = new JoystickButton(controller, 12);
-    sprintButton.toggleWhenPressed(oscarMike);
     JoystickButton intakeCompressor = new JoystickButton(controller, 2);
-    intakeCompressor.toggleWhenPressed(runIntake);
+    intakeCompressor.toggleWhenPressed(teleopIntake);
   }
 
   /**

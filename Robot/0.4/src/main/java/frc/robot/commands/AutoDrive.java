@@ -18,7 +18,6 @@ public class AutoDrive extends CommandBase {
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {
-    drivetrain.autoInit();
     timer.reset();
 
     if (drivetrain.autoChooser.getSelected().contains("Straight Back Red")) {

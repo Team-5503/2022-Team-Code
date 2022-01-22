@@ -1,6 +1,5 @@
 package frc.robot.subsystems;
 
-import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj.motorcontrol.VictorSP;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
@@ -9,7 +8,6 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.RobotContainer;
 
 public class Drivetrain extends SubsystemBase {
-  public Timer timer;
   public VictorSP leftDrive;
   public VictorSP rightDrive;
   DifferentialDrive drive;
@@ -20,8 +18,6 @@ public class Drivetrain extends SubsystemBase {
     rightDrive = new VictorSP(1);
     drive = new DifferentialDrive(leftDrive, rightDrive);
     autoChooser = new SendableChooser<String>();
-
-    timer = new Timer();
   }
 
 
@@ -30,13 +26,7 @@ public class Drivetrain extends SubsystemBase {
     // This method will be called once per scheduler run
   }
 
-
   public void ArcadeDrive (double XSpd, double YSpd) {
-    drive.arcadeDrive(RobotContainer.controller.getRawAxis(1) * YSpd, RobotContainer.controller.getRawAxis(0) * XSpd);
-  }
-
-  public void ArcadeSprint (double XSpd, double YSpd) {
-    // Makes robot drive 20 percent faster on both X and Y axes
     drive.arcadeDrive(RobotContainer.controller.getRawAxis(1) * YSpd, RobotContainer.controller.getRawAxis(0) * XSpd);
   }
 
@@ -44,13 +34,12 @@ public class Drivetrain extends SubsystemBase {
     drive.arcadeDrive(YSpd, XSpd);
   }
 
-
   public void autoInit () {
+    autoChooser.addOption("SelectAutonomous", "Select Autonomous");
     autoChooser.addOption("StraightBackRed", "Straight Back (Red)");
     autoChooser.addOption("StraightBackBlue" ,"Straight Back (Blue)");
     SmartDashboard.putData("autoChooser", autoChooser);
   }
-
 
   public void stop () {
     drive.stopMotor();
