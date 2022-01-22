@@ -6,7 +6,7 @@
       "autoPopulatePrefix": "",
       "widgetPane": {
         "gridSize": 128.0,
-        "showGrid": true,
+        "showGrid": false,
         "hgap": 16.0,
         "vgap": 16.0,
         "titleType": 0,
@@ -59,6 +59,7 @@
             ],
             "content": {
               "_type": "Basic FMS Info",
+              "_source0": "network_table:///FMSInfo",
               "_title": "FMS"
             }
           },
@@ -96,9 +97,9 @@
     }
   ],
   "windowGeometry": {
-    "x": 305.0,
-    "y": 1.0,
-    "width": 1038.0,
+    "x": 345.0,
+    "y": 7.0,
+    "width": 1037.0,
     "height": 850.0
   }
 }
