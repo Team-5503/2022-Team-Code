@@ -41,17 +41,6 @@
               "_title": "Select Autonomous..."
             }
           },
-          "6,3": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Text View",
-              "_source0": "network_table:///SmartDashboard/distance",
-              "_title": "Target Distance"
-            }
-          },
           "0,4": {
             "size": [
               3,
@@ -61,6 +50,19 @@
               "_type": "Basic FMS Info",
               "_source0": "network_table:///FMSInfo",
               "_title": "FMS"
+            }
+          },
+          "6,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/IntakeStat",
+              "_title": "Intake Down",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
             }
           },
           "6,0": {
@@ -75,19 +77,115 @@
               "_children": [
                 {
                   "_type": "Text View",
-                  "_title": "limelight/tx"
+                  "_source0": "network_table:///limelight/tx",
+                  "_title": "/limelight/tx"
                 },
                 {
                   "_type": "Text View",
-                  "_title": "limelight/ty"
+                  "_source0": "network_table:///limelight/ty",
+                  "_title": "/limelight/ty"
                 },
                 {
                   "_type": "Text View",
-                  "_title": "limelight/ta"
+                  "_source0": "network_table:///limelight/ta",
+                  "_title": "/limelight/ta"
                 },
                 {
                   "_type": "Text View",
-                  "_title": "limelight/ts"
+                  "_source0": "network_table:///limelight/ts",
+                  "_title": "/limelight/ts"
+                }
+              ]
+            }
+          },
+          "6,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/distance",
+              "_title": "Target Distance"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Data",
+      "autoPopulate": true,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": false,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 0,
+        "tiles": {
+          "2,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Network Table Tree",
+              "_source0": "network_table:///LiveWindow/Ungrouped/Solenoid[0,0]",
+              "_title": "Solenoid (0, 0)"
+            }
+          },
+          "2,1": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Network Table Tree",
+              "_source0": "network_table:///LiveWindow/Ungrouped/Solenoid[0,2]",
+              "_title": "Solenoid (0, 2)"
+            }
+          },
+          "7,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Number Bar",
+              "_source0": "network_table:///SmartDashboard/Left Motor Speed",
+              "_title": "/SmartDashboard/Left Motor Speed",
+              "Range/Min": -1.0,
+              "Range/Max": 1.0,
+              "Range/Center": 0.0,
+              "Visuals/Num tick marks": 5,
+              "Visuals/Show text": true
+            }
+          },
+          "0,0": {
+            "size": [
+              2,
+              3
+            ],
+            "content": {
+              "_type": "List Layout",
+              "_title": "Drivetrain",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Simple Dial",
+                  "_source0": "network_table:///LiveWindow/Ungrouped/DifferentialDrive[1]/Left Motor Speed",
+                  "_title": "Left Motor Spd",
+                  "Range/Min": -1.0,
+                  "Range/Max": 1.0,
+                  "Visuals/Show value": true
+                },
+                {
+                  "_type": "Simple Dial",
+                  "_source0": "network_table:///LiveWindow/Ungrouped/DifferentialDrive[1]/Right Motor Speed",
+                  "_title": "Right Motor Spd",
+                  "Range/Min": -1.0,
+                  "Range/Max": 1.0,
+                  "Visuals/Show value": true
                 }
               ]
             }
@@ -97,9 +195,9 @@
     }
   ],
   "windowGeometry": {
-    "x": 345.0,
-    "y": 7.0,
-    "width": 1037.0,
-    "height": 850.0
+    "x": 342.0,
+    "y": 14.0,
+    "width": 1035.0,
+    "height": 852.0
   }
 }
