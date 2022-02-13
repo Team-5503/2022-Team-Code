@@ -105,7 +105,7 @@
             ],
             "content": {
               "_type": "Text View",
-              "_source0": "network_table:///SmartDashboard/distance",
+              "_source0": "network_table:///SmartDashboard/TargetDistance",
               "_title": "Target Distance"
             }
           }
@@ -195,9 +195,9 @@
     }
   ],
   "windowGeometry": {
-    "x": 342.0,
-    "y": 14.0,
-    "width": 1035.0,
+    "x": 0.0,
+    "y": 0.0,
+    "width": 1036.0,
     "height": 852.0
   }
 }
