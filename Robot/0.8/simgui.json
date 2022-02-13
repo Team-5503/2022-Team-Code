@@ -1,0 +1,39 @@
+{
+  "HALProvider": {
+    "PWM Outputs": {
+      "window": {
+        "visible": true
+      }
+    },
+    "Solenoids": {
+      "window": {
+        "visible": true
+      }
+    }
+  },
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo",
+      "/LiveWindow/Dashboard": "Subsystem",
+      "/LiveWindow/Drivetrain": "Subsystem",
+      "/LiveWindow/Intake": "Subsystem",
+      "/LiveWindow/Limelight": "Subsystem",
+      "/LiveWindow/Shooter": "Subsystem",
+      "/LiveWindow/ShooterServo": "Subsystem",
+      "/LiveWindow/Ungrouped/DifferentialDrive[1]": "DifferentialDrive",
+      "/LiveWindow/Ungrouped/PIDController[1]": "PIDController",
+      "/LiveWindow/Ungrouped/Scheduler": "Scheduler",
+      "/SmartDashboard/autoChooser": "String Chooser"
+    }
+  },
+  "NetworkTables": {
+    "LiveWindow": {
+      "Drivetrain": {
+        "open": false
+      }
+    }
+  },
+  "NetworkTables View": {
+    "visible": false
+  }
+}
