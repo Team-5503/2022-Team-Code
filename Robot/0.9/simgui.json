@@ -1,0 +1,88 @@
+{
+  "HALProvider": {
+    "PWM Outputs": {
+      "window": {
+        "visible": true
+      }
+    },
+    "Solenoids": {
+      "0": {
+        "header": {
+          "open": true
+        }
+      },
+      "window": {
+        "visible": true
+      }
+    }
+  },
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo",
+      "/LiveWindow/Dashboard": "Subsystem",
+      "/LiveWindow/Drivetrain": "Subsystem",
+      "/LiveWindow/Intake": "Subsystem",
+      "/LiveWindow/IntakeArms": "Subsystem",
+      "/LiveWindow/Limelight": "Subsystem",
+      "/LiveWindow/LowerShooterLift": "Subsystem",
+      "/LiveWindow/Shooter": "Subsystem",
+      "/LiveWindow/ShooterLift": "Subsystem",
+      "/LiveWindow/ShooterServo": "Subsystem",
+      "/LiveWindow/Ungrouped/DifferentialDrive[1]": "DifferentialDrive",
+      "/LiveWindow/Ungrouped/PIDController[1]": "PIDController",
+      "/LiveWindow/Ungrouped/PIDController[2]": "PIDController",
+      "/LiveWindow/Ungrouped/Scheduler": "Scheduler",
+      "/LiveWindow/UpperShooterLift": "Subsystem",
+      "/SmartDashboard/autoChooser": "String Chooser"
+    },
+    "windows": {
+      "/LiveWindow/Drivetrain": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/LiveWindow/Intake": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/LiveWindow/Limelight": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/LiveWindow/LowerShooterLift": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/LiveWindow/Shooter": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/LiveWindow/UpperShooterLift": {
+        "window": {
+          "visible": true
+        }
+      }
+    }
+  },
+  "NetworkTables": {
+    "LiveWindow": {
+      "Drivetrain": {
+        "open": true
+      },
+      "open": true
+    },
+    "SmartDashboard": {
+      "autoChooser": {
+        "open": true
+      },
+      "open": true
+    }
+  },
+  "NetworkTables View": {
+    "visible": false
+  }
+}
