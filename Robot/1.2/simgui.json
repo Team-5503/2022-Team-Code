@@ -1,0 +1,92 @@
+{
+  "HALProvider": {
+    "Other Devices": {
+      "window": {
+        "visible": false
+      }
+    },
+    "PWM Outputs": {
+      "window": {
+        "visible": true
+      }
+    },
+    "Solenoids": {
+      "0": {
+        "header": {
+          "open": true
+        }
+      }
+    }
+  },
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo",
+      "/LiveWindow/Agitator": "Subsystem",
+      "/LiveWindow/Climber": "Subsystem",
+      "/LiveWindow/Dashboard": "Subsystem",
+      "/LiveWindow/Drivetrain": "Subsystem",
+      "/LiveWindow/Indexer": "Subsystem",
+      "/LiveWindow/Intake": "Subsystem",
+      "/LiveWindow/IntakeArms": "Subsystem",
+      "/LiveWindow/Limelight": "Subsystem",
+      "/LiveWindow/LowerShooterLift": "Subsystem",
+      "/LiveWindow/Shooter": "Subsystem",
+      "/LiveWindow/ShooterLift": "Subsystem",
+      "/LiveWindow/ShooterServo": "Subsystem",
+      "/LiveWindow/Ungrouped/DifferentialDrive[1]": "DifferentialDrive",
+      "/LiveWindow/Ungrouped/PIDController[1]": "PIDController",
+      "/LiveWindow/Ungrouped/PIDController[2]": "PIDController",
+      "/LiveWindow/Ungrouped/PWMSparkMax[2]": "Motor Controller",
+      "/LiveWindow/Ungrouped/PWMSparkMax[5]": "Motor Controller",
+      "/LiveWindow/Ungrouped/PWMSparkMax[7]": "Motor Controller",
+      "/LiveWindow/Ungrouped/PWMTalonFX[6]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Scheduler": "Scheduler",
+      "/LiveWindow/UpperShooterLift": "Subsystem",
+      "/SmartDashboard/autoChooser": "String Chooser"
+    },
+    "windows": {
+      "/LiveWindow/Drivetrain": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/LiveWindow/Intake": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/LiveWindow/Limelight": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/LiveWindow/Shooter": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/LiveWindow/UpperShooterLift": {
+        "window": {
+          "visible": true
+        }
+      }
+    }
+  },
+  "NetworkTables": {
+    "LiveWindow": {
+      "Drivetrain": {
+        "open": true
+      },
+      "open": true
+    },
+    "SmartDashboard": {
+      "autoChooser": {
+        "open": true
+      },
+      "open": true
+    }
+  },
+  "NetworkTables View": {
+    "visible": false
+  }
+}
