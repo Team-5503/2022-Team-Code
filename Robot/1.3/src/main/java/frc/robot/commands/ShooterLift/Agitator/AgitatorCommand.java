@@ -4,9 +4,11 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.Agitator;
 import frc.robot.subsystems.Limelight;
+
 public class AgitatorCommand extends CommandBase {
   private final Agitator agitator;
   private final Limelight limelight;
+  
   public AgitatorCommand(Agitator a, Limelight ll) {
     agitator = a;
     limelight = ll;
