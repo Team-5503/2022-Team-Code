@@ -13,7 +13,7 @@
         "tiles": {
           "0,0": {
             "size": [
-              6,
+              8,
               4
             ],
             "content": {
@@ -49,7 +49,7 @@
             "content": {
               "_type": "Text View",
               "_source0": "network_table:///SmartDashboard/Target Distance",
-              "_title": "Target Distance"
+              "_title": "Target Distance (ft)"
             }
           }
         }
