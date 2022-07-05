@@ -60,7 +60,7 @@
             "content": {
               "_type": "Camera Stream",
               "_source0": "camera_server://USB Camera 0",
-              "_title": "USB Camera 0",
+              "_title": "Intake Camera",
               "Crosshair/Show crosshair": false,
               "Crosshair/Crosshair color": "#FFFFFFFF",
               "Controls/Show controls": false,
@@ -286,8 +286,8 @@
     }
   ],
   "windowGeometry": {
-    "x": 191.0,
-    "y": 0.0,
+    "x": 74.0,
+    "y": 19.0,
     "width": 1183.0,
     "height": 859.0
   }
