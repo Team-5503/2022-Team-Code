@@ -2,31 +2,27 @@ package frc.robot.commands.Intake;
 
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.Intake;
-import frc.robot.subsystems.IntakeAgitator;
 
-public class EjectBall extends CommandBase {
+public class IntakeBall extends CommandBase {
   private final Intake intake;
-  private final IntakeAgitator intakeAgitator;
-    public EjectBall(Intake i, IntakeAgitator ia) {
-      intake = i;
-      intakeAgitator = ia;
-      addRequirements(intake, intakeAgitator);
+  public IntakeBall(Intake i) {
+    intake = i;
+    addRequirements(intake);
   }
+
 
   @Override
   public void initialize() {}
 
-
   @Override
   public void execute() {
-    intake.ballEject();
-    intakeAgitator.agitatorReverse();
+    intake.ballIntake();
   }
+
 
   @Override
   public void end(boolean interrupted) {
     intake.stopIntake();
-    intakeAgitator.stop();
   }
 
 
